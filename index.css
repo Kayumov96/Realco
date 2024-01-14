@@ -87,6 +87,11 @@
     display: flex;
     justify-content: space-around;
 }
+.navright #herobtn{
+    flex: 1.5;
+    margin-left: 2%;
+    height: 48px;
+}
 #cart{
 width: 100px;
 height:42px;
@@ -119,10 +124,29 @@ box-shadow: 0px 2px 4px 0px #00000014;
     flex: 1;
     background-color: #f0efea;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 12% 5% 10% 5%;
+    gap: 12%;
+}
+.heroLeft p{
+    background: #E7E8E3;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    border-radius: 25px;
+}
+.heroLeft h1, h5{
+    width: 60%;
+    flex-wrap: wrap;
+    font-weight: 500;
 }
 .vectop{
     position: absolute;
     top: 0;
+    left: 0;
 }
 .vecbtm{
 right: 0;
@@ -135,4 +159,15 @@ position: absolute;
     background-image: url(./assets/heroRight.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+.heroSearch{
+    flex:3;
+    padding-left: 10%;
+    border-radius: 6px;
+    box-shadow: 0px 2px 4px 0px #00000014;
+color: #E7E8E3;
+font-size: 20px;
+height: 48px;
+border: none;
+outline: none;
 }
