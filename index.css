@@ -278,4 +278,30 @@ margin-right: 10px;
     border: none;
 }
 /* best houses */
+/* fast forward */
+.fast-forward{
+    flex: 1;
+    background-image: url(./assets/fastfwd.jpg);
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ffwd-cart{
+    display: flex;
+    margin: 15px 0;
+    gap: 20px;
+
+}
+.fchild{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+   gap: 12px;
+}
+.fwd-icons{
+    width: 48px;
+    height: 48px;
+}
+/* fast forward */
 
