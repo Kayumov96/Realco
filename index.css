@@ -276,6 +276,7 @@ margin-right: 10px;
     height: 50px;
     outline: none;
     border: none;
+    background-color: inherit;
 }
 /* best houses */
 /* fast forward */
@@ -304,4 +305,50 @@ margin-right: 10px;
     height: 48px;
 }
 /* fast forward */
+/* Properties */
+.properties-cont{
+    width:100%;
+    height: 1559px;
+     background-color: #f0efea;
+      position: relative;
+      text-align: center;
+      padding:10% 5%;
+}
+.properties-cont p{
+    background: #b4b5ae;
+    width: 10%;
+    text-align: center;
+    height: 24px;
+    border-radius: 16px;
+    margin-left: 45%;
+}
+.prp-icn1{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.prp-icn2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.grid-div{
+    display: grid;
+    grid-template-columns: auto auto auto;
+ grid-gap: 2%;
+ grid-row-gap:6%;
+ padding-left:4%;
+    /* grid-template-rows: auto auto auto; */
+    ;
+}
+.grid-child{
+    width: 90%;
+    height:459px;
+    background: #000;
+}
+#btns{
+    margin:10% auto;
+}
+/* Properties style end */
+
 
