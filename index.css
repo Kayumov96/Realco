@@ -344,7 +344,46 @@ margin-right: 10px;
 .grid-child{
     width: 90%;
     height:459px;
-    background: #000;
+  display: flex;
+  flex-direction: column;
+}
+.cart-img{
+    flex: 1;
+}
+#cart-img1{
+    background-image: url(./assets/cart-img1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#cart-img2{
+    background-image: url(./assets/cart-img2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+ #cart-img3{
+    background-image: url(./assets/cart-img3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+ #cart-img4{
+    background-image: url(./assets/cart-img4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+ #cart-img5{
+    background-image: url(./assets/cart-img5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+ #cart-img6{
+    background-image: url(./assets/cart-img6.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+ 
+
+.cart-info{
+    flex: 0.9;
 }
 #btns{
     margin:10% auto;
