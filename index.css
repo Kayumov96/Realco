@@ -476,5 +476,18 @@ h5 {
   padding: 10% 5%;
   gap: 3%;
 }
-
+.userinfo {
+  width: 70%;
+  height: 48px;
+  display: flex;
+  gap: 9%;
+  /* background: #000; */
+}
+#feedbackchild {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 8%;
+  padding: 0% 3%;
+}
 /* feedback end */
