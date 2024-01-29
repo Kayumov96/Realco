@@ -8,5 +8,6 @@
 // console.log(Math.floor(Math.random() * (b - a) + a));
 // console.log(Number.parseFloat("sh"));
 // console.log((3.265576).toFixed(3));
-console.log(0 / 0);
-console.log(typeof NaN);
+// console.log(0 / 0);
+// console.log(typeof NaN);
+console.log(5 != "5");
