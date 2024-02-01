@@ -498,6 +498,8 @@ h5 {
   padding: 8% 5%;
   background-color: #f0efea;
   line-height: 1.5;
+  position: relative;
+  text-align: 140px;
 }
 .latest-Post-container p:first-child {
   background: #d1d2cc;
@@ -505,5 +507,19 @@ h5 {
   text-align: center;
   height: 24px;
   border-radius: 16px;
+}
+.view-all-btn {
+  width: 108px;
+  height: 50px;
+  border-radius: 6px;
+  border: 1px;
+  border: 1px solid #e7e8e3;
+  box-shadow: 0px 2px 4px 0px #00000014;
+  position: absolute;
+  right: 109px;
+  top: 250px;
+  /* background: linear-gradient(0deg, #e7e8e3, #e7e8e3),
+    linear-gradient(0deg, #ffffff, #ffffff);
+ */
 }
 /* latest post ends */
