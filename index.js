@@ -49,8 +49,21 @@
 //   console.log("Zero");
 // }
 
-// multiplication
+// multiplication;
 // var n = 10;
+// var i = 0;
+// while (i < n) {
+//   i++;
+
+//   console.log(`${n} * ${i} = ${n * i}`);
+// }
+
+// do {
+//   i++;
+//   console.log(`${n} * ${i} =${n * i}`);
+// } while (i < n);
+
+// console.log(i);
 // console.log(`Multiplication table of ${n}:`);
 // for (let i = 1; i <= 10; i++) {
 //   let result = n * i;
@@ -58,7 +71,12 @@
 // }
 
 // sum of digits
+// 6. Problem: Sum of Digits
+//    Write a program that takes an input num from the user and calculates the sum of its digits.
 
+var input = 123;
+console.log(input.toFixed());
+console.log(input);
 // var n = 5;
 // var str = "";
 // for (let i = 1; i <= n; i++) {
@@ -76,26 +94,43 @@
 //   str += "\n";
 // }
 // console.log(str);
-let n = 5; // row or column count
-// defining an empty string
-let string = "";
 
-for (let i = 0; i < n; i++) {
-  // external loop
-  for (let j = 0; j < n; j++) {
-    // internal loop
-    if (i === 0 || i === n - 1) {
-      string += "*";
-    } else {
-      if (j === 0 || j === n - 1) {
-        string += "*";
-      } else {
-        string += " ";
-      }
-    }
-  }
-  // newline after each row
-  string += "\n";
-}
-// printing the string
-console.log(string);
+// let n = 5;
+// let string = "";
+// // External loop
+// for (let i = 1; i <= n; i++) {
+//   // printing spaces
+//   for (let j = 1; j <= n - i; j++) {
+//     string += " ";
+//   }
+//   // printing star
+//   for (let k = 0; k < 2 * i - 1; k++) {
+//     string += "*";
+//   }
+//   string += "\n";
+// }
+// console.log(string);
+
+// let n = 5; // row or column count
+// // defining an empty string
+// let string = "";
+
+// for (let i = 0; i < n; i++) {
+//   // external loop
+//   for (let j = 0; j < n; j++) {
+//     // internal loop
+//     if (i === 0 || i === n - 1) {
+//       string += "*";
+//     } else {
+//       if (j === 0 || j === n - 1) {
+//         string += "*";
+//       } else {
+//         string += " ";
+//       }
+//     }
+//   }
+//   // newline after each row
+//   string += "\n";
+// }
+// // printing the string
+// console.log(string);
