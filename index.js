@@ -74,10 +74,15 @@
 // 6. Problem: Sum of Digits
 //    Write a program that takes an input num from the user and calculates the sum of its digits.
 
-var input = 123;
-console.log(input.toFixed());
-console.log(input);
-// var n = 5;
+// var input = 123;
+// input = String(input);
+// var sum = 0;
+// console.log(input);
+// for (let i = 0; i < input.length; i++) {
+//   sum += Number(input[i]);
+// }
+// console.log(sum);
+// // var n = 5;
 // var str = "";
 // for (let i = 1; i <= n; i++) {
 //   console.log(i);
