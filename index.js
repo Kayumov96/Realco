@@ -75,21 +75,27 @@
 //    Write a program that takes an input num from the user and calculates the sum of its digits.
 // 7
 
-var input = 123;
-input = String(input);
-var sum = 0;
-var i = 0;
+// var input = 1234;
+// input = String(input);
+// var sum = 0;
+// var i = 0;
+// while (i < input.length) {
+//   sum += +input[i];
+//   i++;
+// }
+// console.log(sum);
+
 // console.log(input);
 // for (let i = 0; i < input.length; i++) {
 //   sum += Number(input[i]);
 // }
 // console.log(sum);
 
-do {
-  sum += +input[i];
-  i++;
-} while (i < input.length);
-console.log(sum);
+// do {
+//   sum += +input[i];
+//   i++;
+// } while (i < input.length);
+// console.log(sum);
 
 // // var n = 5;
 // var str = "";
@@ -148,3 +154,27 @@ console.log(sum);
 // }
 // // printing the string
 // console.log(string);
+// factorial calculation
+var num = 10;
+var sum = 1;
+var i = 1;
+// for (let i = 1; i < num; i++) {
+//   sum *= i;
+// }
+// console.log(sum);
+
+// while
+// while (i < num) {
+//   sum *= i;
+//   i++;
+// }
+// console.log(sum);
+
+// do ,,, while
+
+do {
+  sum *= i;
+  i++;
+} while (i < num);
+
+console.log(sum);
