@@ -155,9 +155,9 @@
 // // printing the string
 // console.log(string);
 // factorial calculation
-var num = 10;
-var sum = 1;
-var i = 1;
+// var num = 10;
+// var sum = 1;
+// var i = 1;
 // for (let i = 1; i < num; i++) {
 //   sum *= i;
 // }
@@ -172,9 +172,19 @@ var i = 1;
 
 // do ,,, while
 
-do {
-  sum *= i;
-  i++;
-} while (i < num);
+// do {
+//   sum *= i;
+//   i++;
+// } while (i < num);
 
-console.log(sum);
+// console.log(sum);
+// Object
+
+var obj = {
+  name: "Ali",
+  surname: "Kayumov",
+  age: 27,
+};
+obj["full name"] = "Ali Kayumov";
+obj["full name"] = "Arabboy Kayumov";
+console.log(Object.entries(obj));
