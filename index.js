@@ -180,11 +180,38 @@
 // console.log(sum);
 // Object
 
-var obj = {
-  name: "Ali",
-  surname: "Kayumov",
-  age: 27,
+// var obj = {
+//   name: "Ali",
+//   surname: "Kayumov",
+//   age: 27,
+// };
+// create:
+// obj["full name"] = "Ali Kayumov";
+// // update:
+// obj["full name"] = "Arabboy Kayumov";
+// // delete:
+// delete obj["full name"];
+// console.log(Object.entries(obj));
+// var values = Object.keys(obj);
+// var entries = Object.entries(obj);
+// for (let i = 0; i < entries.length; i++) {
+//   //   console.log(values[i]);
+//   //   console.log(obj[values[i]], values[i]);
+//   console.log(entries[i][0], entries[i][1]);
+// }
+
+// list of items
+var items = {
+  item1: "apple",
+  item2: "orange",
+  item3: "banana",
+  item4: "apricot",
 };
-obj["full name"] = "Ali Kayumov";
-obj["full name"] = "Arabboy Kayumov";
-console.log(Object.entries(obj));
+var input = ["shoptoli"];
+var tot = Object.entries(items);
+
+for (var i = 0; i < tot.length; i++) {
+  if (tot[i] !== input) {
+    console.log(tot.push(i));
+  }
+}
