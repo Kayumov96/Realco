@@ -207,11 +207,11 @@ var items = {
   item3: "banana",
   item4: "apricot",
 };
-var input = ["shoptoli"];
-var tot = Object.entries(items);
+// var input = ["shoptoli"];
+// var tot = Object.entries(items);
 
-for (var i = 0; i < tot.length; i++) {
-  if (tot[i] !== input) {
-    console.log(tot.push(i));
-  }
-}
+// for (var i = 0; i < tot.length; i++) {
+//   if (tot[i] !== input) {
+//     console.log(tot.push(i));
+//   }
+// }
