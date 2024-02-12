@@ -201,12 +201,12 @@
 // }
 
 // list of items
-var items = {
-  item1: "apple",
-  item2: "orange",
-  item3: "banana",
-  item4: "apricot",
-};
+// var items = {
+//   item1: "apple",
+//   item2: "orange",
+//   item3: "banana",
+//   item4: "apricot",
+// };
 // var input = ["shoptoli"];
 // var tot = Object.entries(items);
 
@@ -215,3 +215,18 @@ var items = {
 //     console.log(tot.push(i));
 //   }
 // }
+
+// problem : object return if user put a name
+
+var people = {
+  person1: {
+    name: "John",
+    surname: "smith",
+    age: 36,
+  },
+  person2: {
+    name: "Bob",
+    surname: "Dou",
+    age: 18,
+  },
+};
