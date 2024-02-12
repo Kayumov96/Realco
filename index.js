@@ -230,3 +230,13 @@ var people = {
     age: 18,
   },
 };
+var should_found = "John";
+
+var keys = Object.keys(people);
+for (let i = 0; i < keys.length; i++) {
+  var person = people[keys[i]];
+  //   console.log(people[keys[i]]);
+  if (person.name === should_found) {
+    console.log(`${person.name}, ${person.surname}, ${person.age}`);
+  }
+}
