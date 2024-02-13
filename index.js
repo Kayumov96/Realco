@@ -218,25 +218,37 @@
 
 // problem : object return if user put a name
 
-var people = {
-  person1: {
-    name: "John",
-    surname: "smith",
-    age: 36,
+// var people = {
+//   person1: {
+//     name: "John",
+//     surname: "smith",
+//     age: 36,
+//   },
+//   person2: {
+//     name: "Bob",
+//     surname: "Dou",
+//     age: 18,
+//   },
+// };
+// var should_found = "John";
+
+// var keys = Object.keys(people);
+// for (let i = 0; i < keys.length; i++) {
+//   var person = people[keys[i]];
+//   //   console.log(people[keys[i]]);
+//   if (person.name === should_found) {
+//     console.log(`${person.name}, ${person.surname}, ${person.age}`);
+//   }
+// }
+
+// ----------------------------------------------------------------
+// banking progress
+
+var bank = {
+  12312: {
+    balance: 20000,
   },
-  person2: {
-    name: "Bob",
-    surname: "Dou",
-    age: 18,
+  234453: {
+    balance: 18000,
   },
 };
-var should_found = "John";
-
-var keys = Object.keys(people);
-for (let i = 0; i < keys.length; i++) {
-  var person = people[keys[i]];
-  //   console.log(people[keys[i]]);
-  if (person.name === should_found) {
-    console.log(`${person.name}, ${person.surname}, ${person.age}`);
-  }
-}
