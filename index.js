@@ -252,3 +252,17 @@ var bank = {
     balance: 18000,
   },
 };
+var operation_type = "deposit";
+var operation_amount = 250;
+var operation_account = 12312;
+
+if (bank[operation_account]) {
+  if (operation_type === "withdraw") {
+    bank[operation_account].balance -= operation_amount;
+  } else if (operation_type === "deposit") {
+    bank[operation_account].balance += operation_amount;
+  }
+} else {
+  console.log("Operation declined!");
+}
+console.log(bank[operation_account]);
