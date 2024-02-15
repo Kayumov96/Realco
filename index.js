@@ -244,28 +244,44 @@
 // ----------------------------------------------------------------
 // banking progress
 
-var bank = {
-  12312: {
-    balance: 20000,
-  },
-  234453: {
-    balance: 18000,
-  },
-};
+// var bank = {
+//   12312: {
+//     balance: 20000,
+//   },
+//   234453: {
+//     balance: 18000,
+//   },
+// };
 // var operation_type = "deposit";
 // var operation_amount = 250;
 // var operation_account = 12312;
 
-function bankOperation(type, amount, account) {
-  if (bank[account]) {
-    if (type === "withdraw") {
-      bank[account].balance -= amount;
-    } else if (type === "deposit") {
-      bank[account].balance += amount;
-    }
-  } else {
-    console.log("Operation declined!");
-  }
-  console.log(bank);
-}
-bankOperation("withdraw", 400, 12312);
+// function bankOperation(type, amount, account) {
+//   if (bank[account]) {
+//     if (type === "withdraw") {
+//       bank[account].balance -= amount;
+//     } else if (type === "deposit") {
+//       bank[account].balance += amount;
+//     }
+//   } else {
+//     console.log("Operation declined!");
+//   }
+//   console.log(bank);
+// }
+// bankOperation("withdraw", 400, 12312);
+// --------------------------------
+// function decFunction() {
+//   console.log("decFunction");
+// }
+// decFunction();
+// ----------------------------------
+// const expFunction = function () {
+//   console.log("expFunction");
+// };
+// expFunction();
+// ----------------------------------
+// const arrwFunction = () => {
+//   console.log("arrwFunction");
+// };
+// arrwFunction();
+// ---------------------------------
