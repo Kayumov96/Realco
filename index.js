@@ -285,3 +285,27 @@
 // };
 // arrwFunction();
 // ---------------------------------
+// array item add , remove or update
+var items = ["Banana"];
+
+const addItems = (item) => {
+  items.push(item);
+};
+addItems("Apple");
+console.log(items);
+// remove
+const removeItem = function (ite) {
+  const index = items.indexOf(ite);
+  if (index !== -1) {
+    items.splice(index, 1);
+  }
+};
+removeItem("Banana");
+console.log(items);
+// update
+function updaTe(old, newi) {
+  const ind = items.indexOf(old);
+  if (ind !== -1) items[ind] = newi;
+}
+updaTe("Apple", "Kiwi");
+console.log(items);
