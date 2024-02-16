@@ -288,8 +288,13 @@
 // array item add , remove or update
 var items = ["Banana"];
 
-const addItems = (item) => {
+const addItems = (item, it, old, new) => {
   items.push(item);
+  const index = items.indexOf(ite);
+  if (index !== -1) {
+    items.splice(index, 1);
+  }
+
 };
 addItems("Apple");
 console.log(items);

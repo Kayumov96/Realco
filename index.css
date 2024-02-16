@@ -523,3 +523,16 @@ h5 {
  */
 }
 /* latest post ends */
+/* Footer */
+.footerParent {
+  width: 100%;
+  height: 491px;
+  display: flex;
+}
+.footerChild {
+  flex: 1;
+}
+#foot1 {
+  flex: 2;
+}
+/* Footer ends */
