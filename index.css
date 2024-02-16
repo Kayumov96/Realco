@@ -528,6 +528,7 @@ h5 {
   width: 100%;
   height: 491px;
   display: flex;
+  padding: 5% 7%;
 }
 .footerChild {
   flex: 1;
