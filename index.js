@@ -286,31 +286,46 @@
 // arrwFunction();
 // ---------------------------------
 // array item add , remove or update
-var items = ["Banana"];
+// var items = ["Banana"];
 
-const addItems = (item, it, old, new) => {
-  items.push(item);
-  const index = items.indexOf(ite);
-  if (index !== -1) {
-    items.splice(index, 1);
-  }
+// const addItems = (item, it, old, new) => {
+//   items.push(item);
+//   const index = items.indexOf(ite);
+//   if (index !== -1) {
+//     items.splice(index, 1);
+//   }
 
-};
-addItems("Apple");
-console.log(items);
-// remove
-const removeItem = function (ite) {
-  const index = items.indexOf(ite);
-  if (index !== -1) {
-    items.splice(index, 1);
+// };
+// addItems("Apple");
+// console.log(items);
+// // remove
+// const removeItem = function (ite) {
+//   const index = items.indexOf(ite);
+//   if (index !== -1) {
+//     items.splice(index, 1);
+//   }
+// };
+// removeItem("Banana");
+// console.log(items);
+// // update
+// function updaTe(old, newi) {
+//   const ind = items.indexOf(old);
+//   if (ind !== -1) items[ind] = newi;
+// }
+// updaTe("Apple", "Kiwi");
+// console.log(items);
+//----------------------------------------------------------------
+// 1. Write a function that takes a string as input and returns
+// the number of words in the string.
+
+var input = "hi";
+var total = 0;
+
+const countWords = function (input) {
+  for (let i = 0; i < input.length; i++) {
+    total += i;
   }
+  return total;
+  // console.log(total);
 };
-removeItem("Banana");
-console.log(items);
-// update
-function updaTe(old, newi) {
-  const ind = items.indexOf(old);
-  if (ind !== -1) items[ind] = newi;
-}
-updaTe("Apple", "Kiwi");
-console.log(items);
+console.log(countWords());
