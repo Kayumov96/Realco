@@ -318,14 +318,7 @@
 // 1. Write a function that takes a string as input and returns
 // the number of words in the string.
 
-var input = "hi";
-var total = 0;
-
-const countWords = function (input) {
-  for (let i = 0; i < input.length; i++) {
-    total += i;
-  }
-  return total;
-  // console.log(total);
+const countChars = function (str) {
+  return str.length;
 };
-console.log(countWords());
+console.log(countChars("Hello"));
