@@ -318,7 +318,67 @@
 // 1. Write a function that takes a string as input and returns
 // the number of words in the string.
 
-const countChars = function (str) {
-  return str.length;
+// const countChars = function (str) {
+//   return str.length;
+// };
+// console.log(countChars("Hello"));
+// ---------------------------------------
+
+// 2. Create an object that represents a shopping cart with properties
+// for items (an array of objects with properties for name and price).
+// Write a function that takes a shopping cart object as an argument and
+// returns the total cost of all items in the cart.
+
+// const list = {};
+
+// function shopping_list(purchase_info) {
+//   switch (purchase_info.type) {
+//     case "buy":
+//       list[purchase_info.product_name] = {
+//         amount: purchase_info.product_amount,
+//         count: purchase_info.product_count,
+//       };
+//       break;
+//     case "cancel":
+//       delete list[purchase_info.product_name];
+//   }
+//   var sum = 0;
+//   var products = Object.values(list);
+
+//   for (let i = 0; i < products.length; i++) {
+//     // console.log(products[i]);
+//     sum += products[i].amount * products[i].count;
+//   }
+
+//   return {
+//     products: list,
+//     total_amount: sum,
+//     total_product: Object.keys(list).length,
+//   };
+// }
+
+// console.log(
+//   shopping_list({
+//     type: "buy",
+//     product_name: "Shampoo",
+//     product_amount: 15_000,
+//     product_count: 8,
+//   })
+// );
+// --------------------------------
+
+// 3. Write a function that takes a number as input and returns true
+// if the number is a prime number, false otherwise.
+
+const isPrimeNumber = (num) => {
+  if (num < 2) {
+    return false;
+  }
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return true;
 };
-console.log(countChars("Hello"));
+console.log(isPrimeNumber(40));
