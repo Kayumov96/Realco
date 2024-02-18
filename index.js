@@ -370,15 +370,35 @@
 // 3. Write a function that takes a number as input and returns true
 // if the number is a prime number, false otherwise.
 
-const isPrimeNumber = (num) => {
-  if (num < 2) {
-    return false;
-  }
-  for (let i = 2; i <= Math.sqrt(num); i++) {
-    if (num % i === 0) {
-      return false;
-    }
-  }
-  return true;
+// const isPrimeNumber = (num) => {
+//   if (num < 2) {
+//     return false;
+//   }
+//   for (let i = 2; i <= Math.sqrt(num); i++) {
+//     if (num % i === 0) {
+//       return false;
+//     }
+//   }
+//   return true;
+// };
+// console.log(isPrimeNumber(40));
+// --------------------------------
+// 4. Create an object that represents a student with properties for name,
+// grade, and subjects (an array of strings). Write a function that
+// takes a student object as an argument and returns the student's average
+//  grade.
+
+var students = {
+  name: "Arabboy",
+  grade: 80,
+  subjects: ["Math", "Computer Science", "Geomety"],
 };
-console.log(isPrimeNumber(40));
+function getAvarage(student) {
+  let subjectsLength = students.subjects.length;
+  if (subjectsLength === 0) {
+    return "No subjects";
+  }
+  return students.grade / subjectsLength;
+}
+
+console.log(Math.floor(getAvarage()));
