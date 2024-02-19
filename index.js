@@ -388,17 +388,34 @@
 // takes a student object as an argument and returns the student's average
 //  grade.
 
-var students = {
-  name: "Arabboy",
-  grade: 80,
-  subjects: ["Math", "Computer Science", "Geomety"],
-};
-function getAvarage(student) {
-  let subjectsLength = students.subjects.length;
-  if (subjectsLength === 0) {
-    return "No subjects";
+// var students = {
+//   name: "Arabboy",
+//   grade: 80,
+//   subjects: ["Math", "Computer Science", "Geomety"],
+// };
+// function getAvarage(student) {
+//   let subjectsLength = students.subjects.length;
+//   if (subjectsLength === 0) {
+//     return "No subjects";
+//   }
+//   return students.grade / subjectsLength;
+// }
+
+// console.log(Math.floor(getAvarage()));
+// -------------------------------
+
+// 5. Write a function that takes a string as input and returns the string
+//  with all vowels replaced by the letter 'o'.
+
+function wovelReplace(string) {
+  let wovel = ["a", "e", "i", "o", "u"];
+  let characters = string.split("");
+  for (let i = 0; i < characters.length; i++) {
+    if (wovel.includes(characters[i])) {
+      characters[i] = "o";
+    }
   }
-  return students.grade / subjectsLength;
+  return characters.join("");
 }
 
-console.log(Math.floor(getAvarage()));
+console.log(wovelReplace("helloee"));
