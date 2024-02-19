@@ -409,7 +409,7 @@
 
 function wovelReplace(string) {
   let wovel = ["a", "e", "i", "o", "u"];
-  let characters = string.split("");
+  let characters = string.toLowerCase(string).split("");
   for (let i = 0; i < characters.length; i++) {
     if (wovel.includes(characters[i])) {
       characters[i] = "o";
@@ -418,4 +418,4 @@ function wovelReplace(string) {
   return characters.join("");
 }
 
-console.log(wovelReplace("helloee"));
+console.log(wovelReplace("helloAee"));
