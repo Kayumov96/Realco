@@ -407,15 +407,33 @@
 // 5. Write a function that takes a string as input and returns the string
 //  with all vowels replaced by the letter 'o'.
 
-function wovelReplace(string) {
-  let wovel = ["a", "e", "i", "o", "u"];
-  let characters = string.toLowerCase(string).split("");
-  for (let i = 0; i < characters.length; i++) {
-    if (wovel.includes(characters[i])) {
-      characters[i] = "o";
-    }
-  }
-  return characters.join("");
-}
+// function wovelReplace(string) {
+//   let wovel = ["a", "e", "i", "o", "u"];
+//   let characters = string.toLowerCase(string).split("");
+//   for (let i = 0; i < characters.length; i++) {
+//     if (wovel.includes(characters[i])) {
+//       characters[i] = "o";
+//     }
+//   }
+//   return characters.join("");
+// }
 
-console.log(wovelReplace("helloAee"));
+// console.log(wovelReplace("helloAee"));
+
+// ----------------------------------------------------------------
+
+// 6. Create an object that represents a book with properties
+// for title, author, and pages. Write a function that takes a book
+// object as an argument and returns a string in the format
+//  "title by author, pages pages"
+
+var book = {
+  title: "Hello World",
+  author: "Me",
+  pages: 365,
+};
+
+const bookInString = (book) => {
+  `${book.title}, ${book.author}, ${book.pages}`;
+};
+console.log(bookInString(book));
