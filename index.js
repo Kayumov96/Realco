@@ -427,13 +427,28 @@
 // object as an argument and returns a string in the format
 //  "title by author, pages pages"
 
-var book = {
-  title: "Hello World",
-  author: "Me",
-  pages: 365,
-};
+// var book = {
+//   title: "Hello World",
+//   author: "Me",
+//   pages: 365,
+// };
 
-const bookInString = (book) => {
-  `${book.title}, ${book.author}, ${book.pages}`;
-};
-console.log(bookInString(book));
+// const bookInString = (book) => {
+//   `${book.title}, ${book.author}, ${book.pages}`;
+// };
+// console.log(bookInString(book));
+// ---------------------------------
+
+//7. Write a function that takes an array of numbers as input and returns
+// the sum of all numbers in the array.
+
+// var arr = [1, 3, 4, 6, 7, 8, 9, 10];
+
+function sumArr(arr) {
+  let sum = 0;
+  for (i of arr) {
+    sum += i;
+  }
+  console.log(sum);
+}
+sumArr([1, 3, 4, 6, 7, 8, 9, 10]);
