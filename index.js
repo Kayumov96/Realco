@@ -444,11 +444,38 @@
 
 // var arr = [1, 3, 4, 6, 7, 8, 9, 10];
 
-function sumArr(arr) {
-  let sum = 0;
-  for (i of arr) {
-    sum += i;
+// function sumArr(arr) {
+//   let sum = 0;
+//   for (i of arr) {
+//     sum += i;
+//   }
+//   console.log(sum);
+// }
+// sumArr([1, 3, 4, 6, 7, 8, 9, 10]);
+// --------------------------
+// 8. Create an object that represents a restaurant with
+// properties for name, menu (an array of objects with properties
+//  for item and price), and vegan (a boolean indicating if the restaurant
+// serves vegan options). Write a function that takes a restaurant
+//  object as an argument and returns a string listing all menu items and prices.
+
+restaurant = {
+  name: "Uzbegim",
+  menu: [
+    { item: "Chuchvara", price: 10_000 },
+    { item: "Sup", price: 12_000 },
+    { item: "Kebab", price: 15_000 },
+  ],
+  vegan: true,
+};
+function resMenu(restaurant) {
+  let result = "";
+  for (let i = 0; i < restaurant.menu.length; i++) {
+    let name = restaurant.name;
+    let item = restaurant.menu[i].item;
+    let price = restaurant.menu[i].price;
+    result += item + " = " + price;
   }
-  console.log(sum);
+  return result;
 }
-sumArr([1, 3, 4, 6, 7, 8, 9, 10]);
+console.log(resMenu(restaurant));
