@@ -459,23 +459,40 @@
 // serves vegan options). Write a function that takes a restaurant
 //  object as an argument and returns a string listing all menu items and prices.
 
-restaurant = {
-  name: "Uzbegim",
-  menu: [
-    { item: "Chuchvara", price: 10_000 },
-    { item: "Sup", price: 12_000 },
-    { item: "Kebab", price: 15_000 },
-  ],
-  vegan: true,
-};
-function resMenu(restaurant) {
-  let result = "";
-  for (let i = 0; i < restaurant.menu.length; i++) {
-    let name = restaurant.name;
-    let item = restaurant.menu[i].item;
-    let price = restaurant.menu[i].price;
-    result += item + " = " + price;
+// restaurant = {
+//   name: "Uzbegim",
+//   menu: [
+//     { item: "Chuchvara", price: 10_000 },
+//     { item: "Sup", price: 12_000 },
+//     { item: "Kebab", price: 15_000 },
+//   ],
+//   vegan: true,
+// };
+// function resMenu(restaurant) {
+//   let result = "";
+//   for (let i = 0; i < restaurant.menu.length; i++) {
+//     let name = restaurant.name;
+//     let item = restaurant.menu[i].item;
+//     let price = restaurant.menu[i].price;
+//     result += item + " = " + price;
+//   }
+//   return result;
+// }
+// console.log(resMenu(restaurant));
+// ----------------------------------------------------------------
+// 9. Write a function that takes a string as input and returns true
+// if the string is a palindrome, false otherwise.
+
+function isPalind(str) {
+  let length = str.length;
+  let middlen = Math.floor(length / 2);
+
+  for (let i = 0; i < middlen; i++) {
+    if (str[i] !== str[length - 1 - i]) {
+      return false;
+    }
   }
-  return result;
+  return true;
 }
-console.log(resMenu(restaurant));
+
+console.log(isPalind("kokat"));
