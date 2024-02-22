@@ -504,12 +504,31 @@
 
 // 1. Create an array of numbers and return the sum of all elements.
 
-let array = [1, 2, 3, 4, 5, 6, 7, 8, 10];
-console.log(sumArr(array));
-function sumArr(array) {
-  let total = 0;
-  for (i of array) {
-    total += i;
+// let array = [1, 2, 3, 4, 5, 6, 7, 8, 10];
+// console.log(sumArr(array));
+// function sumArr(array) {
+//   let total = 0;
+//   for (i of array) {
+//     total += i;
+//   }
+//   return total;
+// }
+
+// --------------------------
+
+// 2. Create an array of strings and return the length of the longest string.
+
+let stringArr = ["hello", "at", "from", "uzbekistan"];
+
+// let length = stringArr.length;
+function longestString(str) {
+  let longest = 0;
+  for (let i of str) {
+    if (i.length > longest) {
+      longest = i.length;
+    }
   }
-  return total;
+  return longest;
 }
+
+console.log(longestString(stringArr));
