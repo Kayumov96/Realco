@@ -242,7 +242,10 @@
 // }
 
 // ----------------------------------------------------------------
-// banking progress
+// 10. Create an object that represents a bank account with properties for owner,
+// balance, and transactions (an array of objects with properties for date and amount).
+// Write a function that takes a bank account object as an argument and returns the current
+// balance of the account.
 
 // var bank = {
 //   12312: {
@@ -483,16 +486,30 @@
 // 9. Write a function that takes a string as input and returns true
 // if the string is a palindrome, false otherwise.
 
-function isPalind(str) {
-  let length = str.length;
-  let middlen = Math.floor(length / 2);
+// function isPalind(str) {
+//   let length = str.length;
+//   let middlen = Math.floor(length / 2);
 
-  for (let i = 0; i < middlen; i++) {
-    if (str[i] !== str[length - 1 - i]) {
-      return false;
-    }
+//   for (let i = 0; i < middlen; i++) {
+//     if (str[i] !== str[length - 1 - i]) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+
+// console.log(isPalind("kokat"));
+// ------------------------------------
+// Array\
+
+// 1. Create an array of numbers and return the sum of all elements.
+
+let array = [1, 2, 3, 4, 5, 6, 7, 8, 10];
+console.log(sumArr(array));
+function sumArr(array) {
+  let total = 0;
+  for (i of array) {
+    total += i;
   }
-  return true;
+  return total;
 }
-
-console.log(isPalind("kokat"));
