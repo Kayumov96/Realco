@@ -518,17 +518,31 @@
 
 // 2. Create an array of strings and return the length of the longest string.
 
-let stringArr = ["hello", "at", "from", "uzbekistan"];
+// let stringArr = ["hello", "at", "from", "uzbekistan"];
 
-// let length = stringArr.length;
-function longestString(str) {
-  let longest = 0;
-  for (let i of str) {
-    if (i.length > longest) {
-      longest = i.length;
-    }
+// function longestString(str) {
+//   let longest = 0;
+//   for (let i of str) {
+//     if (i.length > longest) {
+//       longest = i.length;
+//     }
+//   }
+//   return longest;
+// }
+
+// console.log(longestString(stringArr));
+// ------------------------------------
+
+// 3. Create an array of numbers and find the average of all elements.
+
+let numbers = [50, 20, 60, 40, 10];
+
+function findAverage(numbers) {
+  let average = 0;
+  for (let i of numbers) {
+    average += i;
   }
-  return longest;
+  let findav = average / numbers.length;
+  return findav;
 }
-
-console.log(longestString(stringArr));
+console.log(findAverage(numbers, "average"));
