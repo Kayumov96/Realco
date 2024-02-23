@@ -553,10 +553,12 @@
 
 // 5. Create an array of numbers and find the maximum value in the array.
 let array = [2, 5, 6, 9, 30, 60, 50];
+
 function findMaxValue(array) {
-  let maxValue = 0;
-  array.forEach((element) => {
-    console.log(element[i]);
-  });
+  let max = Math.max(...array);
+  let min = Math.min(...array);
+  if (max > min) {
+    return `'The max amount in this array is ${max}', 'the minimum is  ${min}'`;
+  }
 }
-findMaxValue();
+console.log(findMaxValue(array));
