@@ -535,14 +535,28 @@
 
 // 3. Create an array of numbers and find the average of all elements.
 
-let numbers = [50, 20, 60, 40, 10];
+// let numbers = [50, 20, 60, 40, 10];
 
-function findAverage(numbers) {
-  let average = 0;
-  for (let i of numbers) {
-    average += i;
-  }
-  let findav = average / numbers.length;
-  return findav;
+// function findAverage(numbers) {
+//   let average = 0;
+//   for (let i of numbers) {
+//     average += i;
+//   }
+//   let findav = average / numbers.length;
+//   return findav;
+// }
+// console.log(findAverage(numbers, "average"));
+// ------------------------------------------
+// 4. Create an array of objects with key-value pairs and
+// filter out objects with a specific key-value pair.
+// ///////???????????????????????????????
+
+// 5. Create an array of numbers and find the maximum value in the array.
+let array = [2, 5, 6, 9, 30, 60, 50];
+function findMaxValue(array) {
+  let maxValue = 0;
+  array.forEach((element) => {
+    console.log(element[i]);
+  });
 }
-console.log(findAverage(numbers, "average"));
+findMaxValue();
