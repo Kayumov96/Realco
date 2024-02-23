@@ -552,13 +552,33 @@
 // ///////???????????????????????????????
 
 // 5. Create an array of numbers and find the maximum value in the array.
-let array = [2, 5, 6, 9, 30, 60, 50];
+// let array = [2, 5, 6, 9, 99, 30, 70, 50];
 
-function findMaxValue(array) {
-  let max = Math.max(...array);
-  let min = Math.min(...array);
-  if (max > min) {
-    return `'The max amount in this array is ${max}', 'the minimum is  ${min}'`;
-  }
-}
-console.log(findMaxValue(array));
+// function findMaxValue(array) {
+//   let max = Math.max(...array);
+//   let min = Math.min(...array);
+//   if (max > min) {
+//     return `'The max amount in this array is ${max}', 'the minimum is  ${min}'`;
+//   }
+// }
+// console.log(findMaxValue(array));
+// let array = [2, 5, 6, 9, 99, 30, 70, 50];
+// let max = array[0];
+// var findMaxValue = function (array) {
+//   for (i of array) {
+//     if (array[i] > max) {
+//       max = array[i];
+//     }
+//   }
+//   console.log(max);
+//   //   return max;
+// };
+// findMaxValue(array);
+
+// ---------------------- //
+// 6. Create an array of strings and sort the array in alphabetical order.
+
+let array = ["arabboy", "doniyor", "ali", "bobur"];
+
+const arraySort = (array) => array.sort((a, b) => a.localeCompare(b));
+console.log(arraySort(array));
