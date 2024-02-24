@@ -562,18 +562,18 @@
 //   }
 // }
 // console.log(findMaxValue(array));
-let array = [2, 5, 6, 9, 99, 30, 70, 50];
-let max = array[0];
-var findMaxValue = function (array) {
-  for (i of array) {
-    if (i > max) {
-      max = i;
-    }
-  }
-  return max;
-  //   return max;
-};
-console.log(findMaxValue(array));
+// let array = [2, 5, 6, 9, 99, 30, 70, 50];
+// let max = array[0];
+// var findMaxValue = function (array) {
+//   for (i of array) {
+//     if (i > max) {
+//       max = i;
+//     }
+//   }
+//   return max;
+//   //   return max;
+// };
+// console.log(findMaxValue(array));
 
 // ---------------------- //
 // 6. Create an array of strings and sort the array in alphabetical order.
@@ -582,3 +582,22 @@ console.log(findMaxValue(array));
 
 // const arraySort = (array) => array.sort((a, b) => a.localeCompare(b));
 // console.log(arraySort(array));
+
+// ----------------------------------
+// 7. Create an array of numbers and find the index of a specific number in the array.
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// -------------------------
+// 8. Create an array of objects with key-value pairs and sort the array based on a specific key.
+let people = [
+  { name: "John", age: 18 },
+  { name: "Toshmat", age: 17 },
+  { name: "Holmat", age: 19 },
+  { name: "Eshmat", age: 20 },
+];
+
+const result = function (data) {
+  let sorted = data.sort((a, b) => a.age - b.age);
+  return sorted;
+};
+console.log(result(people));
