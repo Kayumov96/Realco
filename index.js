@@ -562,23 +562,23 @@
 //   }
 // }
 // console.log(findMaxValue(array));
-// let array = [2, 5, 6, 9, 99, 30, 70, 50];
-// let max = array[0];
-// var findMaxValue = function (array) {
-//   for (i of array) {
-//     if (array[i] > max) {
-//       max = array[i];
-//     }
-//   }
-//   console.log(max);
-//   //   return max;
-// };
-// findMaxValue(array);
+let array = [2, 5, 6, 9, 99, 30, 70, 50];
+let max = array[0];
+var findMaxValue = function (array) {
+  for (i of array) {
+    if (i > max) {
+      max = i;
+    }
+  }
+  return max;
+  //   return max;
+};
+console.log(findMaxValue(array));
 
 // ---------------------- //
 // 6. Create an array of strings and sort the array in alphabetical order.
 
-let array = ["arabboy", "doniyor", "ali", "bobur"];
+// let array = ["arabboy", "doniyor", "ali", "bobur"];
 
-const arraySort = (array) => array.sort((a, b) => a.localeCompare(b));
-console.log(arraySort(array));
+// const arraySort = (array) => array.sort((a, b) => a.localeCompare(b));
+// console.log(arraySort(array));
