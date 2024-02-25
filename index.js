@@ -589,15 +589,30 @@
 
 // -------------------------
 // 8. Create an array of objects with key-value pairs and sort the array based on a specific key.
-let people = [
-  { name: "John", age: 18 },
-  { name: "Toshmat", age: 17 },
-  { name: "Holmat", age: 19 },
-  { name: "Eshmat", age: 20 },
-];
+// let people = [
+//   { name: "John", age: 18 },
+//   { name: "Toshmat", age: 17 },
+//   { name: "Holmat", age: 19 },
+//   { name: "Eshmat", age: 20 },
+// ];
 
-const result = function (data) {
-  let sorted = data.sort((a, b) => a.age - b.age);
-  return sorted;
+// const result = function (data) {
+//   let sorted = data.sort((a, b) => a.age - b.age);
+//   return sorted;
+// };
+// console.log(result(people));
+//------------------------------
+
+// 10. Create an array of strings and remove any duplicates from the array.
+let arr = ["a", "b", "c", "d", "e", "f", "a", "f", "g"];
+
+const removeDuplicates = function (arr) {
+  let filtered = [];
+  arr.filter((value, i) => {
+    if (value !== value[i]) {
+      filtered.push(value);
+    }
+  });
+  return filtered;
 };
-console.log(result(people));
+console.log(removeDuplicates(arr));
