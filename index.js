@@ -604,15 +604,9 @@
 //------------------------------
 
 // 10. Create an array of strings and remove any duplicates from the array.
-let arr = ["a", "b", "c", "d", "e", "f", "a", "f", "g"];
+let arr = ["a", "b", "b", "c", "d", "e", "f", "a", "f", "g"];
 
 const removeDuplicates = function (arr) {
-  let filtered = [];
-  arr.filter((value, i) => {
-    if (value !== value[i]) {
-      filtered.push(value);
-    }
-  });
-  return filtered;
+  return arr.filter((value, i) => arr.indexOf(value) === i);
 };
 console.log(removeDuplicates(arr));
