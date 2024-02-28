@@ -615,8 +615,6 @@
 
 // duplicate true or false
 
-let args = [2, 3, 4, 5];
-
 // const isDuplicate = function (arr) {
 //   let num = 0;
 //   for (let i = 0; i < arr.length; i++) {
@@ -628,13 +626,21 @@ let args = [2, 3, 4, 5];
 //   }
 // };
 // console.log(isDuplicate(arr));
-function containsDuplicate(...args) {
-  const seen = new Set();
-  for (const arg of args) {
-    if (seen.has(arg)) {
-      return true;
-    }
-    seen.add(arg);
-  }
-  return false;
+let args = [1, 3, 4, 5, 2];
+
+function solution(...args) {
+  return args.length !== new Set(args).size;
 }
+console.log(solution(...args));
+
+// function containsDuplicate(...args) {
+//   const seen = new Set();
+//   for (const arg of args) {
+//     if (seen.has(arg)) {
+//       return true;
+//     }
+//     seen.add(arg);
+//   }
+//   return false;
+// }
+// console.log(containsDuplicate(args));
