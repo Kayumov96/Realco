@@ -604,9 +604,37 @@
 //------------------------------
 
 // 10. Create an array of strings and remove any duplicates from the array.
-let arr = ["a", "b", "b", "c", "d", "e", "f", "a", "f", "g"];
+// let arr = ["a", "b", "b", "c", "d", "e", "f", "a", "f", "g"];
 
-const removeDuplicates = function (arr) {
-  return arr.filter((value, i) => arr.indexOf(value) === i);
-};
-console.log(removeDuplicates(arr));
+// const removeDuplicates = function (arr) {
+//   return arr.filter((value, i) => arr.indexOf(value) === i);
+// };
+// console.log(removeDuplicates(arr));
+
+//
+
+// duplicate true or false
+
+let args = [2, 3, 4, 5];
+
+// const isDuplicate = function (arr) {
+//   let num = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     // console.log((num = arr[i]));
+//     num = arr[i];
+//     if (num === arr[i]) {
+//       return true;
+//     }
+//   }
+// };
+// console.log(isDuplicate(arr));
+function containsDuplicate(...args) {
+  const seen = new Set();
+  for (const arg of args) {
+    if (seen.has(arg)) {
+      return true;
+    }
+    seen.add(arg);
+  }
+  return false;
+}
