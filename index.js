@@ -626,12 +626,12 @@
 //   }
 // };
 // console.log(isDuplicate(arr));
-let args = [1, 3, 4, 5, 2];
+// let args = [1, 3, 4, 5, 2];
 
-function solution(...args) {
-  return args.length !== new Set(args).size;
-}
-console.log(solution(...args));
+// function solution(...args) {
+//   return args.length !== new Set(args).size;
+// }
+// console.log(solution(...args));
 
 // function containsDuplicate(...args) {
 //   const seen = new Set();
@@ -644,3 +644,29 @@ console.log(solution(...args));
 //   return false;
 // }
 // console.log(containsDuplicate(args));
+// Given a positive number n > 1 find the prime factor
+// decomposition of n. The result will be a string with
+//  the following form :
+
+//  "(p1**n1)(p2**n2)...(pk**nk)"
+// with the p(i) in increasing order and n(i) empty if n(i) is 1.
+function primeFactors(n) {
+  let factors = "";
+  for (let i = 2; i <= n; i++) {
+    let count = 0;
+    while (n % i === 0) {
+      count++;
+      n /= i;
+    }
+    if (count > 0) {
+      factors += `(${i}`;
+      if (count > 1) {
+        factors += `**${count}`;
+      }
+      factors += ")";
+    }
+  }
+  return factors;
+}
+
+console.log(primeFactors(84));
