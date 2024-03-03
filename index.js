@@ -706,22 +706,34 @@
 // ["Max", "John", "Mark"]           -->  "Max, John and Mark like this"
 // ["Alex", "Jacob", "Mark", "Max"]  -->  "Alex, Jacob and 2 others like this"
 
-const countLikes = function (names) {
-  switch (names.length) {
-    case 0:
-      return "no one likes this";
-    case 1:
-      return `${names[0]} likes this`;
+// const countLikes = function (names) {
+//   switch (names.length) {
+//     case 0:
+//       return "no one likes this";
+//     case 1:
+//       return `${names[0]} likes this`;
 
-    case 2:
-      return `${names[0]} and ${names[1]} likes this`;
-    case 3:
-      return `${names[0]},  ${names[1]}, and ${names[2]} likes this`;
-    default:
-      return `${names[0]} and ${names[1]} and ${
-        names.length - 2
-      } others likes this`;
-  }
-};
+//     case 2:
+//       return `${names[0]} and ${names[1]} likes this`;
+//     case 3:
+//       return `${names[0]},  ${names[1]}, and ${names[2]} likes this`;
+//     default:
+//       return `${names[0]} and ${names[1]} and ${
+//         names.length - 2
+//       } others likes this`;
+//   }
+// };
 
-console.log(countLikes(["Arabboy", "Holmurod"]));
+// console.log(countLikes(["Arabboy", "Holmurod"]));
+
+console.log("heeey"); //first
+
+setTimeout(() => {
+  console.log("1"); //fifth
+}, 1000);
+console.log("heeey 2"); //second
+setTimeout(() => {
+  console.log("2"); //fouth
+}, 0);
+
+console.log("end"); //third
