@@ -726,14 +726,17 @@
 
 // console.log(countLikes(["Arabboy", "Holmurod"]));
 
-console.log("heeey"); //first
+// console.log("heeey"); //first
 
-setTimeout(() => {
-  console.log("1"); //fifth
-}, 1000);
-console.log("heeey 2"); //second
-setTimeout(() => {
-  console.log("2"); //fouth
-}, 0);
+// setTimeout(() => {
+//   console.log("1"); //fifth
+// }, 1000);
+// console.log("heeey 2"); //second
+// setTimeout(() => {
+//   console.log("2"); //fouth
+// }, 0);
 
-console.log("end"); //third
+// console.log("end"); //third
+// let array = [1, 2, 3];
+// array[6] = 9;
+// console.log(array[5]); // undefined
