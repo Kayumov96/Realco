@@ -742,3 +742,20 @@
 // console.log(array[5]); // undefined
 
 var url = "https://cute-jade-binturong-boot.cyclic.app/";
+
+function signUp() {
+  //   console.log(url);
+  fetch(`${url}/user/sign-up`, {
+    method: "POST",
+    body: JSON.stringify({
+      name: "Al",
+      surname: "Capone",
+      password: "alcapone124223",
+      email: "alcapone124223@gmail.com",
+    }),
+  }).then((response) => {
+    console.log(response);
+  });
+}
+
+signUp();
