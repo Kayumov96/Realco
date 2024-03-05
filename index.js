@@ -741,11 +741,10 @@
 // array[6] = 9;
 // console.log(array[5]); // undefined
 
-var url = "https://cute-jade-binturong-boot.cyclic.app/";
+var url = "https://cute-jade-binturong-boot.cyclic.app/api";
 
-function signUp() {
-  //   console.log(url);
-  fetch(`${url}/user/sign-up`, {
+const signUp = () => {
+  fetch(`${url}/user/sign-up?access_token=64bebc1e2c6d3f056a8c85b7`, {
     method: "POST",
     body: JSON.stringify({
       name: "Al",
@@ -753,9 +752,16 @@ function signUp() {
       password: "alcapone124223",
       email: "alcapone124223@gmail.com",
     }),
-  }).then((response) => {
-    console.log(response);
-  });
-}
+  })
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      console.log(data);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+};
 
 signUp();
