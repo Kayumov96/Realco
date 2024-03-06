@@ -741,18 +741,45 @@
 // array[6] = 9;
 // console.log(array[5]); // undefined
 
+// var url = "https://cute-jade-binturong-boot.cyclic.app/api";
+
+// const signUp = () => {
+//   fetch(`${url}/user/sign-up?access_token=64bebc1e2c6d3f056a8c85b7`, {
+//     method: "POST",
+//     body: JSON.stringify({
+//       name: "Al",
+//       surname: "Capone",
+//       password: "alcapone124223",
+//       email: "alcapone124223@gmail.com",
+//     }),
+//   })
+//     .then((response) => {
+//       return response.json();
+//     })
+//     .then((data) => {
+//       console.log(data);
+//     })
+//     .catch((error) => {
+//       console.log(error);
+//     });
+// };
+
+// signUp();
 var url = "https://cute-jade-binturong-boot.cyclic.app/api";
 
-const signUp = () => {
-  fetch(`${url}/user/sign-up?access_token=64bebc1e2c6d3f056a8c85b7`, {
-    method: "POST",
-    body: JSON.stringify({
-      name: "Al",
-      surname: "Capone",
-      password: "alcapone124223",
-      email: "alcapone124223@gmail.com",
-    }),
-  })
+const getFlowers = () => {
+  fetch(
+    `${url}/flower/category/house-plants?access_token=64bebc1e2c6d3f056a8c85b7`,
+    {
+      method: "GET",
+      // body: JSON.stringify({
+      //   name: "Al",
+      //   surname: "Capone",
+      //   password: "alcapone124223",
+      //   email: "alcapone124223@gmail.com",
+      // }),
+    }
+  )
     .then((response) => {
       return response.json();
     })
@@ -764,4 +791,4 @@ const signUp = () => {
     });
 };
 
-signUp();
+getFlowers();
