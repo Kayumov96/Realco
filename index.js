@@ -705,6 +705,7 @@
 // ["Jacob", "Alex"]                 -->  "Jacob and Alex like this"
 // ["Max", "John", "Mark"]           -->  "Max, John and Mark like this"
 // ["Alex", "Jacob", "Mark", "Max"]  -->  "Alex, Jacob and 2 others like this"
+// ------------------------
 
 // const countLikes = function (names) {
 //   switch (names.length) {
@@ -727,7 +728,65 @@
 // console.log(countLikes(["Arabboy", "Holmurod"]));
 
 // console.log("heeey"); //first
+// -------------------------------------
 
+// seven(times(five())); // must return 35
+// four(plus(nine())); // must return 13
+// eight(minus(three())); // must return 5
+// six(dividedBy(two())); // must return 3
+
+function zero(operation) {
+  return operation ? operation(0) : 0;
+}
+function one(operation) {
+  return operation ? operation(1) : 1;
+}
+function two(operation) {
+  return operation ? operation(2) : 2;
+}
+function three(operation) {
+  return operation ? operation(3) : 3;
+}
+function four(operation) {
+  return operation ? operation(4) : 4;
+}
+function five(operation) {
+  return operation ? operation(5) : 5;
+}
+function six(operation) {
+  return operation ? operation(6) : 6;
+}
+function seven(operation) {
+  return operation ? operation(7) : 7;
+}
+function eight(operation) {
+  return operation ? operation(8) : 8;
+}
+function nine(operation) {
+  return operation ? operation(9) : 9;
+}
+
+function plus(righthand) {
+  return function (lefthand) {
+    return lefthand + righthand;
+  };
+}
+function minus(righthand) {
+  return function (lefthand) {
+    return lefthand - righthand;
+  };
+}
+function times(righthand) {
+  return function (lefthand) {
+    lefthand * righthand;
+  };
+}
+function dividedBy(righthand) {
+  return function (lefthand) {
+    return lefthand / righthand;
+  };
+}
+// ----------------------------------------
 // setTimeout(() => {
 //   console.log("1"); //fifth
 // }, 1000);
@@ -765,30 +824,30 @@
 // };
 
 // signUp();
-var url = "https://cute-jade-binturong-boot.cyclic.app/api";
+// var url = "https://cute-jade-binturong-boot.cyclic.app/api";
 
-const getFlowers = () => {
-  fetch(
-    `${url}/flower/category/house-plants?access_token=64bebc1e2c6d3f056a8c85b7`,
-    {
-      method: "GET",
-      // body: JSON.stringify({
-      //   name: "Al",
-      //   surname: "Capone",
-      //   password: "alcapone124223",
-      //   email: "alcapone124223@gmail.com",
-      // }),
-    }
-  )
-    .then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      console.log(data);
-    })
-    .catch((error) => {
-      console.log(error);
-    });
-};
+// const getFlowers = () => {
+//   fetch(
+//     `${url}/flower/category/house-plants?access_token=64bebc1e2c6d3f056a8c85b7`,
+//     {
+//       method: "GET",
+//       // body: JSON.stringify({
+//       //   name: "Al",
+//       //   surname: "Capone",
+//       //   password: "alcapone124223",
+//       //   email: "alcapone124223@gmail.com",
+//       // }),
+//     }
+//   )
+//     .then((response) => {
+//       return response.json();
+//     })
+//     .then((data) => {
+//       console.log(data.filter((value) => {}));
+//     })
+//     .catch((error) => {
+//       console.log(error);
+//     });
+// };
 
-getFlowers();
+// getFlowers();
