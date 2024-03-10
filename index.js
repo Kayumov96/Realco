@@ -912,3 +912,6 @@
 // console.log(eight(minus(three()))); // 5
 // console.log(six(dividedBy(two()))); // 3
 // ----------------------------------
+// Array and all methods
+// [1,2,3].push(4)=>      [1,2,3,4]
+// [1,2,3,4].pop()=>       [1,2,3]
