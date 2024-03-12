@@ -929,4 +929,7 @@
 // [1,2,3].findIndex(n=> n % 2 ===0)=>   1
 // [,2,3].map(n => n * 2) =>    [2,4,6]
 // [1,2,3].filter(n=>n % 2 !== 0)  =>  [1,3]
-// [1,2,3].reduce((acc, cur=> acc + cur) =>   6
+// [1,2,3].reduce((acc, cur)=> acc + cur) =>   6
+// [1, 2, 3].fill(0, 2); =>     [1,2,0]
+let arr = [1, 2, 3].every((n) => n > 0);
+console.log(arr);
