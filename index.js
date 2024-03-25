@@ -931,5 +931,7 @@
 // [1,2,3].filter(n=>n % 2 !== 0)  =>  [1,3]
 // [1,2,3].reduce((acc, cur)=> acc + cur) =>   6
 // [1, 2, 3].fill(0, 2); =>     [1,2,0]
-let arr = [1, 2, 3].every((n) => n > 0);
-console.log(arr);
+// [1, 2, 3].every((n) => n > 0);=>   true;
+// [1,2,3].some(n => n >2)=>     true;
+// [1,2,3].reverse()=>       [3,2,1];
+// [2,1,3].sort((a,b)=> a-b) =>    [1,2,3];
