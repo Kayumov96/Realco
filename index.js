@@ -935,3 +935,10 @@
 // [1,2,3].some(n => n >2)=>     true;
 // [1,2,3].reverse()=>       [3,2,1];
 // [2,1,3].sort((a,b)=> a-b) =>    [1,2,3];
+
+// ----------------
+function withoutLast(arr) {
+  // Fix it
+  const newArr = arr.slice(0, arr.length - 1); // removes the last element
+  return newArr;
+}
