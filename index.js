@@ -946,24 +946,33 @@
 
 // add 1 end of string
 
-function incrementString(str) {
-  // Split the string into its alpha and numeric parts
-  const matches = str.match(/(\D*)(\d*)$/);
-  const alphaPart = matches[1] || "";
-  let numericPart = matches[2] || "";
+// function incrementString(str) {
+//   // Split the string into its alpha and numeric parts
+//   const matches = str.match(/(\D*)(\d*)$/);
+//   const alphaPart = matches[1] || "";
+//   let numericPart = matches[2] || "";
 
-  // If numeric part is empty, append '1' to the alpha part
-  if (numericPart === "") {
-    return alphaPart + "1";
-  }
+//   // If numeric part is empty, append '1' to the alpha part
+//   if (numericPart === "") {
+//     return alphaPart + "1";
+//   }
 
-  // Increment the numeric part by 1
-  numericPart = (parseInt(numericPart) + 1).toString();
+//   // Increment the numeric part by 1
+//   numericPart = (parseInt(numericPart) + 1).toString();
 
-  // Pad the numeric part with leading zeros if necessary
-  const zerosToAdd = matches[2].length - numericPart.length;
-  numericPart = "0".repeat(Math.max(0, zerosToAdd)) + numericPart;
+//   // Pad the numeric part with leading zeros if necessary
+//   const zerosToAdd = matches[2].length - numericPart.length;
+//   numericPart = "0".repeat(Math.max(0, zerosToAdd)) + numericPart;
 
-  return alphaPart + numericPart;
-}
-console.log(incrementString("fooo99"));
+//   return alphaPart + numericPart;
+// }
+// console.log(incrementString("fooo99"));
+// ----------------------------------------------------------------
+// sum of arr i
+// const numbers = [1, 2, 3, 4];
+// let sum = 0;
+
+// for (let i = 0; i < numbers.length; i++) {
+//   sum += numbers[i];
+// }
+// console.log(sum);
