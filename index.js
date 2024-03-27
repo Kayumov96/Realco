@@ -937,8 +937,33 @@
 // [2,1,3].sort((a,b)=> a-b) =>    [1,2,3];
 
 // ----------------
-function withoutLast(arr) {
-  // Fix it
-  const newArr = arr.slice(0, arr.length - 1); // removes the last element
-  return newArr;
+// function withoutLast(arr) {
+//   // Fix it
+//   const newArr = arr.slice(0, arr.length - 1); // removes the last element
+//   return newArr;
+// }
+// -----------------------
+
+// add 1 end of string
+
+function incrementString(str) {
+  // Split the string into its alpha and numeric parts
+  const matches = str.match(/(\D*)(\d*)$/);
+  const alphaPart = matches[1] || "";
+  let numericPart = matches[2] || "";
+
+  // If numeric part is empty, append '1' to the alpha part
+  if (numericPart === "") {
+    return alphaPart + "1";
+  }
+
+  // Increment the numeric part by 1
+  numericPart = (parseInt(numericPart) + 1).toString();
+
+  // Pad the numeric part with leading zeros if necessary
+  const zerosToAdd = matches[2].length - numericPart.length;
+  numericPart = "0".repeat(Math.max(0, zerosToAdd)) + numericPart;
+
+  return alphaPart + numericPart;
 }
+console.log(incrementString("fooo99"));
