@@ -976,3 +976,8 @@
 //   sum += numbers[i];
 // }
 // console.log(sum);
+// -----------------
+const numbers = [33, 2, 8];
+// numbers.sort((a, b) => a - b); 2,8,33
+// numbers.sort(); 2,33,8
+console.log(numbers[1]);
