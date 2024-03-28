@@ -977,7 +977,20 @@
 // }
 // console.log(sum);
 // -----------------
-const numbers = [33, 2, 8];
+// const numbers = [33, 2, 8];
 // numbers.sort((a, b) => a - b); 2,8,33
 // numbers.sort(); 2,33,8
-console.log(numbers[1]);
+// console.log(numbers[1]);
+
+// -------------------------
+// const numbers = [1, 2, 3, 4, 5];
+// const sum = numbers.reduce((a, b) => a + b, 10);
+// console.log(sum); 25
+// ----------------------
+
+// const myArr = ["a", "b", "c"];
+// const myMap = { a: 1, b: 2, c: 3 };
+
+// const result = myArr.map((l) => myMap[l]);
+// console.log(result); [1,2,3]
+// ------------------
